@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Huda</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="flex justify-between items-center p-2">
+    <div class="bg-[url('/images/mhs.jpg')] bg-cover bg-center rounded-full h-[50px] w-[50px]"></div>
+    <nav class="flex gap-1">
+      <a class="border rounded px-2 py-1 hover:border-blue-600 hover:text-blue-600 transition-colors" href="#home">Home</a>
+      <a class="border rounded px-2 py-1 hover:border-blue-600 hover:text-blue-600 transition-colors" href="#our-profile">Our Profile</a>
+      <a class="border rounded px-2 py-1 hover:border-blue-600 hover:text-blue-600 transition-colors" href="#portofolio">Portofolio</a>
+      <a class="border rounded px-2 py-1 hover:border-blue-600 hover:text-blue-600 transition-colors" href="#message-us">Message Us</a>
+    </nav>
+  </header>
+
+  <hr />
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Home -->
+    <section class="p-4" id="home">
+      <h1 class="text-2xl font-bold">Hello!! <span id="welcome-speech"></span>, Welcome to My Website</h1>
+          <!-- banner -->
+    <section class="p-6 min-h-[500px] bg-gradient-to-r from-cyan-400 to-blue-700 text-white flex flex-col md:flex-row items-center justify-between gap-10" id="home">
+      <!-- Text -->
+      <div class="flex-1">
+        <h2 class="text-lg font-bold text-blue-900">Hello Everyone, I Am</h2>
+        <h1 class="text-4xl md:text-6xl font-extrabold text-blue-950 mt-2 leading-tight">
+          Miftahul Huda<br />Saputra
+        </h1>
+        <div class="mt-6 px-6 py-3 w-67 bg-blue-900 text-white font-semibold rounded-lg">
+          Beginner Full-Stack Developer
+        </div>
+      </div>
+
+      <!-- images -->
+      <div class="relative flex-1 flex justify-center items-center">
+        <!-- circle -->
+        <div class="absolute w-full h-full bg-blue-600 rounded-full z-0"></div>
+        <!-- foto -->
+        <img src="/images/mhsprofile.png" alt="Foto Banner Miftahul Huda Saputra" class="relative z-10 w-full h-auto object-cover">
+      </div>
+    </section>
+
+    </section>
+
+    <hr />
+
+    <!-- Our Profile -->
+    <section class="p-4 min-h-[500px]" id="our-profile">
+      <h1 class="text-2xl font-bold mb-4">Our Profile</h1>
+      <p class="text-base mb-6">
+        I am passionate developers and designers committed to creating meaningful digital experiences.
+        My mission is to help businesses and individuals bring their ideas to life with clean, modern, and user-focused design.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="border p-4 rounded-lg shadow hover:shadow-md transition">
+          <h2 class="text-xl font-semibold mb-2">Miftahul Huda Saputra</h2>
+          <p>Beginner Full-stack Developer= Beginner in HTML, CSS, JavaScript, and Tailwind CSS. Expert in C++, MySQL, Figma, and CorelDraw. Loves building accessible interfaces.</p>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Portofolio -->
+    <section class="p-4 min-h-[500px]" id="portofolio">
+      <h1 class="text-2xl font-bold mb-4">Portofolio</h1>
+      <p class="text-base mb-6">Here are some of the projects we’ve worked on recently.</p>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Project 1 -->
+        <div class="border rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+          <img src="https://www.k-vision.tv/themes/kvision/images/k-vision-logo.png" alt="KVision Voucher" class="w-full h-48 object-contain">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">KVision Voucher</h3>
+            <p class="text-sm text-gray-600">A responsive redesign prototype of the KVision voucher application, focused on simplicity and visual clarity.</p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="border rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+          <img src="https://bima.tri.co.id/assets/img/logo-bima-web.png" alt="Bima+" class="w-full h-48 object-contain">
+          <div class="p-4">
+            <h3 class="font-semibold text-lg">Bima+</h3>
+            <p class="text-sm text-gray-600">Redesign prototype UI/UX of the Bima+ application, focused on simplicity.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Message Us -->
+    <section class="p-4 min-h-[500px]" id="message-us">
+      <h1 class="text-2xl font-bold">Message Us</h1>
+      <p class="text-base">Feel free to reach out with any questions or inquiries.</p>
+
+      <div class="flex">
+        <form class="flex-1 flex flex-col gap-4">
+          <div>
+            <label for="name-input">Name:</label>
+            <input class="border rounded px-2 py-1 w-62 focus:border-blue-600 focus:ring-1 focus:ring-blue-300 outline-none transition-colors" type="text" id="name-input" name="name" required>
+          </div>
+          <div>
+            <label for="dob-input">Date of Birth:</label>
+            <input class="border rounded px-2 py-1 w-50 focus:border-blue-600 focus:ring-1 focus:ring-blue-300 outline-none transition-colors" type="date" id="dob-input" name="dob" required>
+          </div>
+          <div>
+            <label>Gender:</label>
+            <label class="ml-2"><input type="radio" name="gender" value="Male" required> Male</label>
+            <label class="ml-2"><input type="radio" name="gender" value="Female" required> Female</label>
+          </div>
+          <div class="flex flex-col">
+            <label for="message-input">Message:</label>
+            <textarea class="border rounded px-2 py-1 w-75 mt-2 focus:border-blue-600 focus:ring-1 focus:ring-blue-300 outline-none transition-colors" id="message-input" name="message" required></textarea>
+          </div>
+          <button class="border rounded px-2 py-1 w-30 bg-blue-100 hover:bg-blue-300 transition" type="button" onclick="validateForm();">Send Message</button>
+        </form>
+        <aside class="min-h-[100px] flex-1 flex items-center justify-center rounded-[4px] bg-blue-200 ml-2 mb-[52px]">
+          <p id="result-form" class="text-center w-full"></p>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <hr />
+
+  <!-- Footer -->
+  <footer class="text-right p-5 bg-gray-200">
+    <p>Created By Miftahul Huda Saputra</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
